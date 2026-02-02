@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <title>
+            Kanban To-do list
+        </title>
+        <style>
+            #main-container {
+                border: 2px solid black;
+                width: 100%;
+                height: 60vh;
+
+            }
+            .sub-container {
+                border: 2px solid black;
+                width: 33%;
+                height: 100%;
+                float:left;
+                overflow: auto;
+               
+                
+            }
+            .tasks{
+                height:100% ;
+                overflow: auto;
+            }
+            .task{
+                border: 2px solid black;
+                margin: 10px;
+            }
+            .header {
+                width: 100%;
+                text-align: center;
+                position: sticky
+           ;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>To-Do List</h1>
+        <div id="main-container">
+            <div id="pending" class="sub-container">
+                <div class="header">
+                    <h2>Pending</h2>
+                </div>
+                <div class="tasks">
+                <div class="task">
+                    <h4>title</h4>
+                    <p>description</p>
+                </div>
+                <div class="task">
+                    <h4>title</h4>
+                    <p>description</p>
+                </div>
+                <div class="task">
+                    <h4>title</h4>
+                    <p>description</p>
+                </div>
+                     <div class="task">
+                    <h4>title</h4>
+                    <p>description</p>
+                </div>
+                <div class="task">
+                    <h4>title</h4>
+                    <p>description</p>
+                </div>
+                <div class="task">
+                    <h4>title</h4>
+                    <p>description</p>
+                </div>
+                </div>
+            </div>
+            <div id="ongoing" class="sub-container">
+                <div class="header">
+                    <h2>ongoing</h2>
+                </div>
+                <div class="task">
+                    <h4>title</h4>
+                    <p>description</p>
+                </div>
+                   <div class="task">
+                    <h4>title</h4>
+                    <p>description</p>
+                </div>
+                <div class="task">
+                    <h4>title</h4>
+                    <p>description</p>
+                </div>
+            </div>
+            <div id="completed" class="sub-container">
+                <div class="header">
+                    <h2>completed</h2>
+                </div>
+                <div class="task">
+                    <h4>title</h4>
+                    <p>description</p>
+                </div>
+                <div class="task">
+                    <h4>title</h4>
+                    <p>description</p>
+                </div>
+                <div class="task">
+                    <h4>title</h4>
+                    <p>description</p>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
