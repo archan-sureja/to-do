@@ -11,18 +11,18 @@
 <body>
     <h1>To-Do List</h1>
     <div id="main-container">
-        <div class="column" id="pending">
+          <div id="pending" class="column" ondragover="handleDragOver(event)" ondrop="handleDrop(event)">
             <div class="header">
                 <h2>Pending</h2>
             </div>
         
         </div>
-        <div class="column">
+        <div class="column" ondragover="handleDragOver(event)" ondrop="handleDrop(event)">
             <div class="header">
                 <h2>ongoing</h2>
             </div>
         </div>
-        <div class="column">
+         <div class="column" ondragover="handleDragOver(event)" ondrop="handleDrop(event)">
             <div class="header">
                 <h2>completed</h2>
             </div>
