@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="index.css">
 </head>
 
-<body>
+<body onload="handleOnLoad()">
     <h1>To-Do List</h1>
     <div id="main-container">
           <div id="pending" class="column" ondragover="handleDragOver(event)" ondrop="handleDrop(event)">
@@ -17,12 +17,12 @@
             </div>
         
         </div>
-        <div class="column" ondragover="handleDragOver(event)" ondrop="handleDrop(event)">
+        <div id="ongoing" class="column" ondragover="handleDragOver(event)" ondrop="handleDrop(event)">
             <div class="header">
                 <h2>ongoing</h2>
             </div>
         </div>
-         <div class="column" ondragover="handleDragOver(event)" ondrop="handleDrop(event)">
+         <div id="completed" class="column" ondragover="handleDragOver(event)" ondrop="handleDrop(event)">
             <div class="header">
                 <h2>completed</h2>
             </div>
@@ -38,6 +38,7 @@
             <button type="submit" value="Add">Add</button>
             <button type="reset" value="Clear">Clear</button>
         </form>
+        <button onclick="removeAllTasks()">Clear All Tasks</button>
     </section>
     <script src="index.js"></script>
 </body>
